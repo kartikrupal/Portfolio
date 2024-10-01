@@ -22,3 +22,6 @@ document.getElementById('skills-btn').onclick = function() {
 document.getElementById('certifications-btn').onclick = function() {
     document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' });
 }
+document.getElementById('Introduction-btn').onclick = function() {
+    document.getElementById('Introduction').scrollIntoView({ behavior: 'smooth' });
+}
