@@ -3,115 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kartik Rupal - Resume Portfolio</title>
+    <title>Kartik Rupal - AI & ML Engineer Portfolio</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Kartik Rupal</h1>
-            <p>AI & ML ENGINEER</p>
-            <!-- Buttons for external links and scrolling -->
-            <div class="button-container">
-                <button id="Introduction-btn">Introduction</button>
-                <button id="linkedin-btn">LinkedIn</button>
-                <button id="github-btn">GitHub</button>
-                <button id="contact-btn">Contact</button>
-                <button id="projects-btn">Projects</button>
-                <button id="skills-btn">Skills</button>
-                <button id="certifications-btn">Certifications</button>
+
+    <!-- New Fixed Navigation Bar (Appears on Scroll) -->
+    <nav id="main-nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">Kartik Rupal</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- New Hero Section -->
+    <header id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Hello. <br>I'm <span class="gradient-text">Kartik.</span></h1>
+                <p class="subtitle">
+                    <span class="typed-text"></span><span class="typed-cursor">&nbsp;</span>
+                </p>
+                <p class="hero-description">
+                    I design and build intelligent applications, leveraging data to solve complex problems and create seamless user experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-btn">View My Work</a>
+                    <a href="Kartik_aiml.pdf" class="secondary-btn" download>Download Resume <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for an image of you -->
+                <img src="pic.jpg" alt="Kartik Rupal">
             </div>
         </div>
     </header>
-    <section id="Introduction">
-        <h2>Introduction</h2>
-        <p>Detail-oriented Computer Science student with a passion for leveraging data to solve 
-            complex problems. Proficient in Python, C++, and SQL. Experienced in data manipulation, 
-            analysis, and modelling using libraries like Pandas, NumPy, Scikit-learn, and 
-            TensorFlow/PyTorch. Eager to contribute to innovative AI projects and learn from industry 
-            experts</p>
-    </section>
-   
-   
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Predictive Modelling</li>
-            <li>Clustering Models</li>
-            <li>Data Modelling</li>
-            <li>Unit Testing</li>
-            <li>Natural Language Processing</li>
-        </ul>
-    </section>
+    <!-- Main Content Wrapper -->
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 20px auto; color: var(--text-secondary);">
+                    I am an enthusiastic and driven third-year Computer Science undergraduate with a focus on Artificial Intelligence and Machine Learning, blending algorithmic thinking with intelligent system design. I have experience applying both theoretical knowledge and practical skills through various projects, demonstrating clarity in logic-building, model development, and system-level understanding.
+                </p>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="grid-layout">
+                    <div class="card">
+                        <h3>AI Intern - Microsoft Azure AI Internship</h3>
+                        <p style="color: var(--text-secondary);">Edunet Foundation in collaboration with AICTE</p>
+                        <p style="font-style: italic;">May 2025 - June 2025</p>
+                        <ul>
+                            <li>Developed an SQL query generator using Natural Language Processing (NLP), the Gemini API, and Flask.</li>
+                            <li>Built a deep learning project on Hate Speech Detection using NLP and LSTM models.</li>
+                            <li>Gained practical experience in cloud AI services, supervised/unsupervised learning, and deep learning through mentor-led sessions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="tools">
-        <h2>Tools & Software</h2>
-        <ul>
-            <li>Scikit-Learn</li>
-            <li>NumPy</li>
-            <li>TensorFlow</li>
-            <li>SciPy</li>
-            <li>CAD Design</li>
-        </ul>
-    </section>
-   
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="grid-layout">
+                     <div class="card project-card">
+                        <h3 class="project-title">SQL Query Generator (2025)</h3>
+                        <p class="project-description">A web application built with Flask and the Gemini API that translates natural language into SQL queries.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">View Demo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                     <div class="card project-card">
+                        <h3 class="project-title">Facial Expression Detection (2025)</h3>
+                        <p class="project-description">Designed and implemented a CNN-based deep learning model for facial emotion recognition.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kartikrupal" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <h3 class="project-title">Plant Disease Detection (2024)</h3>
+                        <p class="project-description">Developed a convolutional neural network (CNN) model for plant disease detection.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kartikrupal" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong><a href="https://github.com/kartikrupal/Plant-Disease-Detection-Using-CNN" target="_blank">Plant Disease Detection using CNN</a></strong> - Developed a convolutional neural network model to detect plant diseases using image processing techniques.</li>
-            <li><strong><a href="https://github.com/kartikrupal/Face-recognition-system" target="_blank">Face Recognition System</a></strong> - A face recognition system that applies PCA for feature extraction and LDA for classification on grayscale facial images. </li> 
-            <li><strong>Car Rental Website</strong> - Designed and implemented a web platform for car rental services, integrating backend functionalities for booking and management.</li>
-            <li><strong>Automated Drone for Deliveries</strong> - Supervised the creation of an automated drone system for safe and effective deliveries.</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Technologies</h2>
+                <div class="skills-container">
+                    <div class="skill-tag">C++</div><div class="skill-tag">Python</div><div class="skill-tag">Java</div><div class="skill-tag">SQL</div><div class="skill-tag">JavaScript</div><div class="skill-tag">HTML/CSS</div><div class="skill-tag">Scikit-Learn</div><div class="skill-tag">TensorFlow</div><div class="skill-tag">Keras</div><div class="skill-tag">Git</div><div class="skill-tag">Docker</div>
+                </div>
+            </div>
+        </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/kartikrupal-9967/CDA4BF24E23C6EFC?sharingId=4F595D77EFF99955" target="_blank">Microsoft Certified: Azure AI Fundamentals</a></li>
-            <li><a href="https://www.linkedin.com/learning-login/share?account=92961692&forceAccount=true&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fpaths%2Fchandigarh-university-introduction-to-generative-ai-24366808%3Ftrk%3Dshare_ent_path_url%26shareId%3Dknwy9sthRI%252Bj%252Bl%252BlY6axqQ%253D%253D" target="_blank">Introduction to Generative AI</a></li>
-            <li><a href="https://coursera.org/share/f4df761f2781801b98fb4d0b7eb2ae25" target="_blank">Machine Learning for All, University of London</a></li>
-            <li><a href="https://coursera.org/share/35432a9badb4797464bb4f00a53d2a8a" target="_blank">Introduction to Psychology by Yale University</a></li>
-
-        </ul>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Chandigarh University</strong> (2022-2026) - Bachelor of Engineering (CSE) with Specialization in AI & ML.</p>
-        <p><strong>Apollo Public School</strong> (2021-2022) - Higher Secondary (12th) - 90.6%</p>
-    </section>
-    <section id="soft-skills">
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>Interpersonal Skills</li>
-            <li>Decision Making</li>
-            <li>Communication</li>
-            <li>Multitasking</li>
-            <li>Leadership</li>
-        </ul>
-    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Have a project in mind or just want to connect? Feel free to reach out.</p>
+                <div class="social-icons">
+                    <a href="mailto:kartik.kr20171215@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/kartikrupal" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kartikrupal" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
     
-
-
-
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:Kartik.kr20171215@gmail.com">Kartik.kr20171215@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+919501006759">9501006759</a></p>
-        <p><strong>Location:</strong> Chandigarh, India</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kartikrupal" target="_blank">linkedin.com/kartikrupal</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/kartikrupal" target="_blank">github.com/kartikrupal</a></p>
-    </section>
-
     <footer>
-        <p>&copy; 2024 Kartik Rupal. All rights reserved.</p>
+        <p>&copy; 2025 Kartik Rupal. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 </html>
